@@ -11,4 +11,4 @@ def test_home(client):
     """Test the home route."""
     response = client.get('/')
     assert response.status_code == 200
-    assert b"Welcome to the User Profile App" in response.data
+    assert b"Hello, Docker!" in response.data
